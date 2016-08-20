@@ -1,4 +1,4 @@
-##### Flexbox Playground
+### Flexbox Playground
 
 - This is a simple application to help teach basic
   methods of flexbox design in CSS. 
