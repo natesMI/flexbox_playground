@@ -1,5 +1,29 @@
+#title {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  font-size: 20px;
+  color: #c0392b;
+}
+
+/*---------- view 1 ---------*/
+#view-1 {
+  display: none;
+}
+
+.toolbar-1 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 75px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #7f8c8d;
+}
+
 #child-one-a {
-  background-color: red;
+  background-color: #e74c3c;
   margin: 10px;
   height: 100px;
   display: flex;
@@ -11,7 +35,7 @@
   flex-grow: 1;
 }
 #child-one-b {
-  background-color: green;
+  background-color: #2ecc71;
   margin: 10px;
   height: 100px;
   /*flex: 1;*/
@@ -22,7 +46,7 @@
   flex-grow: 3;
 }
 #child-one-c {
-  background-color: blue;
+  background-color: #f1c40f;
   margin: 10px;
   height: 100px;
   /*flex: 2;*/
@@ -34,7 +58,7 @@
 }
 
 #container-one {
-  background-color: black;
+  background-color: #2c3e50;
   margin: 10px;
   height: 200px;
   display: flex;
@@ -43,6 +67,12 @@
   /* row, row-reverse, column-reverse */
   /* flex-end, flex-start, 
   space-between, space-around */
+}
+
+/*---------- view 2 ----------*/
+
+#view-2 {
+  display: none;
 }
 
 #child-two-a {
@@ -90,6 +120,12 @@
   /* row, row-reverse, column-reverse */
   /* flex-end, flex-start, 
   space-between, space-around */
+}
+
+/*---------- view 3 ----------*/
+
+#view-3 {
+  display: none;
 }
 
 .wrap-item {

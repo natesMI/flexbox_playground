@@ -9,9 +9,9 @@
   on the DOM elements.
 
 - To use the tool:
-  1. Fork the repo to your Github
-  2. Clone it down to your local machine
-  3. open index.html in you browser
+  - Fork the repo to your Github
+  - Clone it down to your local machine
+  - Open index.html in you browser
 
 
 
