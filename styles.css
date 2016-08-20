@@ -1,0 +1,116 @@
+#child-one-a {
+  background-color: red;
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  /*flex: 3;*/
+  flex-basis: 10px;
+  flex-grow: 1;
+}
+#child-one-b {
+  background-color: green;
+  margin: 10px;
+  height: 100px;
+  /*flex: 1;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20px;
+  flex-grow: 3;
+}
+#child-one-c {
+  background-color: blue;
+  margin: 10px;
+  height: 100px;
+  /*flex: 2;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40px;
+  flex-grow: 2;
+}
+
+#container-one {
+  background-color: black;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* row, row-reverse, column-reverse */
+  /* flex-end, flex-start, 
+  space-between, space-around */
+}
+
+#child-two-a {
+  background-color: red;
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  /*flex: 3;*/
+  flex-basis: 400px;
+  flex-shrink: 1;
+}
+#child-two-b {
+  background-color: green;
+  margin: 10px;
+  height: 100px;
+  /*flex: 1;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 400px;
+  flex-shrink: 3;
+}
+#child-two-c {
+  background-color: blue;
+  margin: 10px;
+  height: 100px;
+  /*flex: 2;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 400px;
+  flex-shrink: 2;
+}
+
+#container-two {
+  background-color: black;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* row, row-reverse, column-reverse */
+  /* flex-end, flex-start, 
+  space-between, space-around */
+}
+
+.wrap-item {
+  height: 50px;
+  flex: 0 50px;
+  background-color: purple;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-three {
+  background-color: black;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* row, row-reverse, column-reverse */
+  /* flex-end, flex-start, 
+  space-between, space-around */
+}
