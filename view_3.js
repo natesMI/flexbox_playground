@@ -16,7 +16,7 @@ $( document ).ready(function() {
   };
 
   $('#flex-basis').on('click', function(){
-    $('#css-2').html('<div><pre><code>flex-basis: 100px;</code></pre></div>');
+    $('#css-3').html('<div><pre><code>flex-wrap: wrap;</code></pre></div>');
     $('.wrap_item').css('flex-wrap', 'wrap');
   });
 
