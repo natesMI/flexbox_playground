@@ -25,5 +25,21 @@ $( document ).ready(function() {
   	}
   });
 
+  $('#display').on('click', function(){
+    $('#css-1').html('<pre><code>#purple-div { display: flex; }</code></pre>');
+    $('#container-one').css('display', 'flex');
+  });
+  $('#flex-direction').on('click', function(){
+    $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: column; }</code></pre>');
+    $('#container-one').css('flex-direction', 'column');
+  });
+  $('#justify-content').on('click', function(){
+    $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: row; justify-content: center }</code></pre>');
+    $('#container-one').css('justify-content', 'center');
+  });
+  $('#align-items').on('click', function(){
+    $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: row; justify-content: center; align-items: center }</code></pre>');
+    $('#container-one').css('align-items', 'center');
+  });
 
 });
