@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Flexbox Playground</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox Playground</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
 
-  <div id="title">
-    <div id="prev"><- PREV</div>
-    <h1 id="header">Flexbox Playground</h1>
-    <div id=next>NEXT -></div>
-  </div>
+    <div id="title">
+      <div id="prev"><- PREV</div>
+      <h1 id="header">Flexbox Playground</h1>
+      <div id=next>NEXT -></div>
+    </div>
 
-  <!-- view 1 -->
+    <!-- view 1 -->
 
-  <div id="view-1">
-    <div class="toolbar">
-      <button id="display" class="tool-button">display</button>
-      <button id="flex-direction" class="tool-button">flex-direction</button>
-      <button id="justify-content"class="tool-button">justify-content</button>
-      <button id="align-items" class="tool-button">align-items</button>
+    <div id="view-1">
+      <div class="toolbar">
+        <button id="display" class="tool-button">display</button>
+        <button id="flex-direction" class="tool-button">flex-direction</button>
+        <button id="justify-content"class="tool-button">justify-content</button>
+        <button id="align-items" class="tool-button">align-items</button>
+      </div>
+      <div id="container-one">
+        <div id="child-one-a">BOX 1</div>
+        <div id="child-one-b">BOX 2</div>
+        <div id="child-one-c">BOX 3</div>
+      </div>
+      <div id="css-1" class="css-viewer">
+        <h3>Purple Div CSS Properties</h3>
+      </div>
     </div>
-    <div id="container-one">
-      <div id="child-one-a">BOX 1</div>
-      <div id="child-one-b">BOX 2</div>
-      <div id="child-one-c">BOX 3</div>
-    </div>
-    <div id="css-1" class="css-viewer">
-    </div>
-  </div>
 
-  <!-- view 2 -->
+    <!-- view 2 -->
 
-  <div id="view-2">
-    <div class="toolbar">
-      <button class="tool-button">flex-basis</button>
-      <button class="tool-button">flex-grow</button>
-      <button class="tool-button">flex-shrink</button>
+    <div id="view-2">
+      <div class="toolbar">
+        <button class="tool-button">flex-basis</button>
+        <button class="tool-button">flex-grow</button>
+        <button class="tool-button">flex-shrink</button>
+      </div>
+      <div id="container-two">
+        <div id="child-two-a">BOX 1</div>
+        <div id="child-two-b">BOX 2</div>
+        <div id="child-two-c">BOX 3</div>
+      </div>
+      <div id="css-2" class="css-viewer">
+        <h3>Purple Div CSS Properties</h3>
+      </div>
     </div>
-    <div id="container-two">
-      <div id="child-two-a">BOX 1</div>
-      <div id="child-two-b">BOX 2</div>
-      <div id="child-two-c">BOX 3</div>
-    </div>
-    <div class="css-viewer">
-      <pre><code>
-        #BOX_2 { 
-          display: flex; 
-        }
-      </code></pre>
-    </div>
-  </div>
 
-  <!-- view 3 -->
+    <!-- view 3 -->
 
-  <div id="view-3">
-    <div class="toolbar">
-      <button class="tool-button">flex</button>
-      <button class="tool-button">order</button>
-      <button class="tool-button">flex-wrap</button>
+    <div id="view-3">
+      <div class="toolbar">
+        <button class="tool-button">flex</button>
+        <button class="tool-button">order</button>
+        <button class="tool-button">flex-wrap</button>
+      </div>
+      <div id="container-three">
+        <div class="wrap-item">BOX 1</div>
+        <div class="wrap-item">BOX 2</div>
+        <div class="wrap-item">BOX 3</div>
+        <div class="wrap-item">BOX 4</div>
+        <div class="wrap-item">BOX 5</div>
+        <div class="wrap-item">BOX 6</div>
+        <div class="wrap-item">BOX 7</div>
+        <div class="wrap-item">BOX 8</div>
+      </div>
+      <div id="css-3" class="css-viewer">
+        <h3>Purple Div CSS Properties</h3>
+      </div>
     </div>
-    <div id="container-three">
-      <div class="wrap-item">BOX 1</div>
-      <div class="wrap-item">BOX 2</div>
-      <div class="wrap-item">BOX 3</div>
-      <div class="wrap-item">BOX 4</div>
-      <div class="wrap-item">BOX 5</div>
-      <div class="wrap-item">BOX 6</div>
-      <div class="wrap-item">BOX 7</div>
-      <div class="wrap-item">BOX 8</div>
-    </div>
-    <div class="css-viewer">
-      <pre><code>
-        #BOX_3 { 
-          display: flex; 
-        }
-      </code></pre>
-    </div>
-  </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="./index.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>

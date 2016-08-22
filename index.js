@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
   var buttonMap = {
     display: false,
-    flex_direction: false,
+    flex_direction: [false, 'row', 'row-reverse', 'column', 'column-reverse'],
     justify_content: false,
     align_items: false
   };
@@ -35,11 +35,11 @@ $( document ).ready(function() {
   $('#display').on('click', function(){
     if(buttonMap['display']){
       buttonMap['display'] = false;
-      $('#css-1').html('<pre><code>#purple-div { display: block; }</code></pre>');
-      $('#container-one').css('display', 'block');
+      $('#css-1').html('<h3>Purple Div CSS Properties</h3>');
+      $('#container-one').css('display', '');
     } else {
       buttonMap['display'] = true;
-      $('#css-1').html('<pre><code>#purple-div { display: flex; }</code></pre>');
+      $('#css-1').html('<div><pre><code>display: flex;</code></pre></div>');
       $('#container-one').css('display', 'flex');
     }
   });
@@ -48,11 +48,11 @@ $( document ).ready(function() {
     if(buttonMap['display']){
       if(buttonMap['flex_direction']){
         buttonMap['flex_direction'] = false;
-        $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: none; }</code></pre>');
-        $('#container-one').css('flex-direction', 'none');
+        $('#css-1').html('<div><pre><code>display: flex;</code></pre></div>');
+        $('#container-one').css('flex-direction', '');
       } else {
         buttonMap['flex_direction'] = true;
-        $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: row; }</code></pre>');
+        $('#css-1').html('<div><pre><code>display: flex; flex-direction: row;</code></pre></div>');
         $('#container-one').css('flex-direction', 'row');
       }
     } else {
@@ -62,8 +62,15 @@ $( document ).ready(function() {
 
   $('#justify-content').on('click', function(){
     if(buttonMap['display']){
-      $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: row; justify-content: center }</code></pre>');
-      $('#container-one').css('justify-content', 'center');
+      if(buttonMap['justify_content']){
+        buttonMap['justify_content'] = false;
+        $('#css-1').html('<div><pre><code>display: flex; flex-direction: row;</code></pre></div>');
+        $('#container-one').css('justify-content', '');
+      } else {
+        buttonMap['justify_content'] = true;
+        $('#css-1').html('<div><pre><code>display: flex; flex-direction: row; justify-content: center;</code></pre></div>');
+        $('#container-one').css('justify-content', 'center');
+      }
     } else {
       $('#css-1').html('<h3>Must first toggle display property</h3>');
     }
@@ -71,11 +78,34 @@ $( document ).ready(function() {
 
   $('#align-items').on('click', function(){
     if(buttonMap['display']){
-      $('#css-1').html('<pre><code>#purple-div { display: flex; flex-direction: row; justify-content: center; align-items: center }</code></pre>');
-      $('#container-one').css('align-items', 'center');
+      if(buttonMap['align_items']){
+        buttonMap['align_items'] = false;
+        $('#css-1').html('<div><pre><code>display: flex; flex-direction: row; justify-content: center;</code></pre></div>');
+        $('#container-one').css('align-items', '');
+      } else {
+        buttonMap['align_items'] = true;
+        $('#css-1').html('<div><pre><code>display: flex; flex-direction: row; justify-content: center; align-items: center;</code></pre></div>');
+        $('#container-one').css('align-items', 'center');
+      }
     } else {
       $('#css-1').html('<h3>Must first toggle display property</h3>');
     }
   });
-
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
