@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  height: 150px;
+  height: 175px;
   margin: 10px;
   border-radius: 5px;
   background-color: #95a5a6;
@@ -66,9 +66,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 95px;
+  height: 120px;
   flex-basis: 150px;
   flex-grow: 1;
+  flex-shrink: 1;
   margin: 10px;
   padding: 10px;
 }
@@ -83,10 +84,11 @@
 }
 
 .prop-button {
-  height: 25px;
+  height: 35px;
   margin: 5px;
   border-radius: 5px;
   background-color: white;
+  flex-basis: 75px;
 }
 
 .bottom-bar {
