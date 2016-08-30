@@ -6,6 +6,12 @@ $( document ).ready(function(){
 
   $view1.show();
 
+  $('#intro-message').show();
+
+  $('#intro-confirm').on('click', function(){
+    $('#intro-message').hide();
+  });
+
   var pageFlow = [$view1, $view2, $view3];
   var counter = 0;
 
