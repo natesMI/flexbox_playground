@@ -21,7 +21,7 @@ $( document ).ready(function() {
       $('#container-one').css('display', '');
     } else {
       display = true;
-      $('#display-flex').css('background-color', '#27ae60');
+      $('#display-flex').css('background-color', '#9b59b6');
       $('#container-one').css('display', 'flex');
     }
   });
@@ -31,7 +31,7 @@ $( document ).ready(function() {
       if(flexDirection['status']){
         $('#flex-direction' + flexDirection['value']).css('background-color', '#ffffff');
       }
-      $('#flex-direction-row').css('background-color', '#27ae60');
+      $('#flex-direction-row').css('background-color', '#9b59b6');
       $('#container-one').css('flex-direction', 'row');
       flexDirection['status'] = true;
       flexDirection['value'] = '-row';
@@ -50,7 +50,7 @@ $( document ).ready(function() {
       if(flexDirection['status']){
         $('#flex-direction' + flexDirection['value']).css('background-color', '#ffffff');
       }
-      $('#flex-direction-column').css('background-color', '#27ae60');
+      $('#flex-direction-column').css('background-color', '#9b59b6');
       $('#container-one').css('flex-direction', 'column');
       flexDirection['status'] = true;
       flexDirection['value'] = '-column';
@@ -69,7 +69,7 @@ $( document ).ready(function() {
       if(flexDirection['status']){
         $('#flex-direction' + flexDirection['value']).css('background-color', '#ffffff');
       }
-      $('#flex-direction-row-reverse').css('background-color', '#27ae60');
+      $('#flex-direction-row-reverse').css('background-color', '#9b59b6');
       $('#container-one').css('flex-direction', 'row-reverse');
       flexDirection['status'] = true;
       flexDirection['value'] = '-row-reverse';
@@ -88,7 +88,7 @@ $( document ).ready(function() {
       if(flexDirection['status']){
         $('#flex-direction' + flexDirection['value']).css('background-color', '#ffffff');
       }
-      $('#flex-direction-column-reverse').css('background-color', '#27ae60');
+      $('#flex-direction-column-reverse').css('background-color', '#9b59b6');
       $('#container-one').css('flex-direction', 'column-reverse');
       flexDirection['status'] = true;
       flexDirection['value'] = '-column-reverse';
@@ -107,7 +107,7 @@ $( document ).ready(function() {
       if(justifyContent['status']){
         $('#justify-content' + justifyContent['value']).css('background-color', '#ffffff');
       }
-      $('#justify-content-').css('background-color', '#27ae60');
+      $('#justify-content-').css('background-color', '#9b59b6');
       $('#container-one').css('flex-direction', 'column-reverse');
       flexDirection['status'] = true;
       flexDirection['value'] = '-column-reverse';
@@ -125,7 +125,7 @@ $( document ).ready(function() {
     if(display === true && flexDirection['status'] === true){
       if(viewMap_1['align_items']['status']){
         viewMap_1['align_items']['status'] = false;
-        $('#align-items').css('background-color', '#34495e');
+        $('#align-items').css('background-color', '#9b59b6');
         $('#container-one').css('align-items', '');
       } else {
         viewMap_1['align_items']['status'] = true;
