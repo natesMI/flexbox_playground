@@ -1,33 +1,52 @@
 $( document ).ready(function() {
 
-  var viewMap_2 = {
-    flex_basis: {
-      status: false,
-      options: ['', '30px', 'auto', 'fill']
-    },
-    flex_grow: {
-      status: false,
-      options: ['', '3', '0.5']
-    },
-    flex_shrink: {
-      status: false,
-      options: ['', '2', '0.6']
-    }
+  var flexBasis = {
+    status: false,
+    value: ''
+  };
+  var justifyContent = {
+    status: false,
+    value: ''
+  };
+  var alignItems = {
+    status: false,
+    value: ''
   };
 
-  $('#flex-basis').on('click', function(){
-    if(viewMap_2['flex_basis']['status']){
-      viewMap_2['flex_basis']['status'] = false;
-      $('#flex-basis').css('background-color', '#34495e');
-      $('#child-two-a').css('flex-basis', '400px');
-      $('#child-two-b').css('flex-basis', '400px');
-      $('#child-two-c').css('flex-basis', '400px');
-    } else {
-      viewMap_2['flex_basis']['status'] = true;
-      $('#flex-basis').css('background-color', '#1abc9c');
-      $('#child-two-a').css('flex-basis', '150px');
-      $('#child-two-b').css('flex-basis', '250px');
-      $('#child-two-c').css('flex-basis', '350px');
+  $('#flex-basis-small').on('click', function(){
+    if(flexBasis['status']){
+      $('#flex-basis' + flexBasis['value']).css('background-color', '#ffffff');
     }
+    flexBasis['status'] = true;
+    flexBasis['value'] = '-small';
+    $('#flex-basis-small').css('background-color', '#9b59b6');
+    $('#child-two-a').css('flex-basis', '200px');
+    $('#child-two-b').css('flex-basis', '200px');
+    $('#child-two-c').css('flex-basis', '200px');
   });
+
+  $('#flex-basis-medium').on('click', function(){
+    if(flexBasis['status']){
+      $('#flex-basis' + flexBasis['value']).css('background-color', '#ffffff');
+    }
+    flexBasis['status'] = true;
+    flexBasis['value'] = '-medium';
+    $('#flex-basis-medium').css('background-color', '#9b59b6');
+    $('#child-two-a').css('flex-basis', '300px');
+    $('#child-two-b').css('flex-basis', '300px');
+    $('#child-two-c').css('flex-basis', '300px');
+  });
+
+  $('#flex-basis-large').on('click', function(){
+    if(flexBasis['status']){
+      $('#flex-basis' + flexBasis['value']).css('background-color', '#ffffff');
+    }
+    flexBasis['status'] = true;
+    flexBasis['value'] = '-large';
+    $('#flex-basis-large').css('background-color', '#9b59b6');
+    $('#child-two-a').css('flex-basis', '400px');
+    $('#child-two-b').css('flex-basis', '400px');
+    $('#child-two-c').css('flex-basis', '400px');
+  });
+
 });
