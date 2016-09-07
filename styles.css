@@ -98,7 +98,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  height: 175px;
+  min-height: 175px;
   margin: 10px;
   border-radius: 5px;
   background-color: #95a5a6;
@@ -115,7 +115,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  min-height: 120px;
   flex-basis: 150px;
   flex-grow: 1;
   flex-shrink: 1;
@@ -147,7 +147,7 @@
   border-radius: 5px;
 }
 
-#child-one-a {
+#child-one-one {
   background-color: #e74c3c;
   margin: 10px;
   height: 75px;
@@ -157,7 +157,7 @@
   flex-basis: 100px;
 }
 
-#child-one-b {
+#child-one-two {
   background-color: #2ecc71;
   margin: 10px;
   height: 75px;
@@ -167,7 +167,7 @@
   flex-basis: 200px;
 }
 
-#child-one-c {
+#child-one-three {
   background-color: #f1c40f;
   margin: 10px;
   height: 75px;
