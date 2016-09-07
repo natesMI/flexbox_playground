@@ -82,34 +82,37 @@ $( document ).ready(function() {
     $('#child-two-three').css('flex-grow', '1');
   });
 
-  $('#flex-shrink-small').on('click', function(){
+  $('#flex-shrink-one').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
+      $('#child-one' + flexGrow['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
-    flexShrink['value'] = '-small';
-    $('#flex-shrink-small').css('background-color', '#9b59b6');
-    $('#child-two-three').css('flex-shrink', '1');
+    flexShrink['value'] = '-one';
+    $('#flex-shrink-one').css('background-color', '#9b59b6');
+    $('#child-two-one').css('flex-shrink', '2');
   });
 
-  $('#flex-shrink-medium').on('click', function(){
+  $('#flex-shrink-two').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
+      $('#child-two' + flexGrow['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
-    flexShrink['value'] = '-medium';
-    $('#flex-shrink-medium').css('background-color', '#9b59b6');
+    flexShrink['value'] = '-two';
+    $('#flex-shrink-two').css('background-color', '#9b59b6');
     $('#child-two-two').css('flex-shrink', '2');
   });
 
-  $('#flex-shrink-large').on('click', function(){
+  $('#flex-shrink-three').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
+      $('#child-three' + flexGrow['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
-    flexShrink['value'] = '-large';
-    $('#flex-shrink-large').css('background-color', '#9b59b6');
-    $('#child-two-one').css('flex-shrink', '3');
+    flexShrink['value'] = '-three';
+    $('#flex-shrink-three').css('background-color', '#9b59b6');
+    $('#child-two-three').css('flex-shrink', '2');
   });
 
 });
