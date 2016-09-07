@@ -191,7 +191,7 @@
   display: none;
 }
 
-#child-two-a {
+#child-two-one {
   background-color: #2ecc71;
   border: solid 7px #9b59b6;
   margin: 10px;
@@ -202,7 +202,7 @@
   flex-basis: 200px;
 }
 
-#child-two-b {
+#child-two-two {
   background-color: #f1c40f;
   border: solid 7px #9b59b6;
   margin: 10px;
@@ -213,7 +213,7 @@
   flex-basis: 200px;
 }
 
-#child-two-c {
+#child-two-three {
   background-color: #e74c3c;
   border: solid 7px #9b59b6;
   margin: 10px;
