@@ -52,7 +52,7 @@ $( document ).ready(function() {
   $('#flex-grow-one').on('click', function(){
     if(flexGrow['status']){
       $('#flex-grow' + flexGrow['value']).css('background-color', '#ffffff');
-      $('#child-one' + flexGrow['value']).css('flex-grow', '0');
+      $('#child-two' + flexGrow['value']).css('flex-grow', '0');
     }
     flexGrow['status'] = true;
     flexGrow['value'] = '-one';
@@ -74,7 +74,7 @@ $( document ).ready(function() {
   $('#flex-grow-three').on('click', function(){
     if(flexGrow['status']){
       $('#flex-grow' + flexGrow['value']).css('background-color', '#ffffff');
-      $('#child-three' + flexGrow['value']).css('flex-grow', '0');
+      $('#child-two' + flexGrow['value']).css('flex-grow', '0');
     }
     flexGrow['status'] = true;
     flexGrow['value'] = '-three';
@@ -85,7 +85,7 @@ $( document ).ready(function() {
   $('#flex-shrink-one').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
-      $('#child-one' + flexGrow['value']).css('flex-shrink', '1');
+      $('#child-two' + flexShrink['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
     flexShrink['value'] = '-one';
@@ -96,7 +96,7 @@ $( document ).ready(function() {
   $('#flex-shrink-two').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
-      $('#child-two' + flexGrow['value']).css('flex-shrink', '1');
+      $('#child-two' + flexShrink['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
     flexShrink['value'] = '-two';
@@ -107,7 +107,7 @@ $( document ).ready(function() {
   $('#flex-shrink-three').on('click', function(){
     if(flexShrink['status']){
       $('#flex-shrink' + flexShrink['value']).css('background-color', '#ffffff');
-      $('#child-three' + flexGrow['value']).css('flex-shrink', '1');
+      $('#child-two' + flexShrink['value']).css('flex-shrink', '1');
     }
     flexShrink['status'] = true;
     flexShrink['value'] = '-three';
