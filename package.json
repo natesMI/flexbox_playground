@@ -1,0 +1,22 @@
+{
+  "name": "flexbox_playground",
+  "version": "1.0.0",
+  "description": "interactive learning tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natesMI/flexbox_playground.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Nathaniel Schwab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natesMI/flexbox_playground/issues"
+  },
+  "homepage": "https://github.com/natesMI/flexbox_playground#readme"
+}
