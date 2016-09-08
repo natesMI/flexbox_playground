@@ -243,7 +243,7 @@
 
 .wrap-item {
   height: 100px;
-  flex: 0 50px;
+  flex: 0 75px;
   background-color: #f39c12;
   border: solid 7px #9b59b6;
   margin: 10px;
@@ -264,11 +264,23 @@
   background-color: #e74c3c;
 }
 
+#flex-flow-row-reverse-wrap-reverse {
+  flex-basis: 125px;
+}
+
+.align-self-button {
+  height: 35px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  flex-basis: 50px;
+}
+
 #container-three {
   background-color: #2c3e50;
   border-radius: 5px;
   border: solid 7px #3498db;
   margin: 10px;
-  height: 314px;
+  height: 300px;
   display: flex;
 }
