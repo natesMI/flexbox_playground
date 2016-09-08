@@ -239,7 +239,7 @@
 
 .wrap-item {
   height: 100px;
-  flex: 0 75px;
+  flex: 0 100px;
   background-color: #f39c12;
   border: solid 7px #9b59b6;
   margin: 10px;
@@ -277,6 +277,6 @@
   border-radius: 5px;
   border: solid 7px #3498db;
   margin: 10px;
-  height: 300px;
+  min-height: 300px;
   display: flex;
 }
