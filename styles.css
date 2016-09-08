@@ -197,8 +197,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 200px;
-  flex-shrink: 0;
+  flex-basis: 150px;
 }
 
 #child-two-two {
@@ -209,8 +208,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 200px;
-  flex-shrink: 0;
+  flex-basis: 150px;
 }
 
 #child-two-three {
@@ -221,8 +219,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 200px;
-  flex-shrink: 0;
+  flex-basis: 150px;
 }
 
 #container-two {
@@ -232,7 +229,7 @@
   min-height: 314px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 /*---------- view 3 ----------*/

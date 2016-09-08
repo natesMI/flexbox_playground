@@ -101,7 +101,7 @@ $( document ).ready(function() {
     flexShrink['status'] = true;
     flexShrink['value'] = '-two';
     $('#flex-shrink-two').css('background-color', '#9b59b6');
-    $('#child-two-two').css('flex-shrink', '2');
+    $('#child-two-two').css('flex-shrink', '0');
   });
 
   $('#flex-shrink-three').on('click', function(){
