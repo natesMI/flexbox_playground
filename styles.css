@@ -148,7 +148,7 @@
 #child-one-one {
   background-color: #e74c3c;
   margin: 10px;
-  height: 75px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +158,7 @@
 #child-one-two {
   background-color: #2ecc71;
   margin: 10px;
-  height: 75px;
+  min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +168,7 @@
 #child-one-three {
   background-color: #f1c40f;
   margin: 10px;
-  height: 75px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;

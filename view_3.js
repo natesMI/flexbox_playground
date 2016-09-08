@@ -81,4 +81,64 @@ $( document ).ready(function() {
     $('#flex-wrap-wrap-reverse').css('background-color', '#3498db');
   });
 
+  $('#align-self-auto').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-auto';
+    $('#wrap-five').css('align-self', 'auto');
+    $('#align-self-auto').css('background-color', '#e74c3c');
+  });
+
+  $('#align-self-flex-start').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-flex-start';
+    $('#wrap-five').css('align-self', 'flex-start');
+    $('#align-self-flex-start').css('background-color', '#e74c3c');
+  });
+
+  $('#align-self-flex-end').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-flex-end';
+    $('#wrap-five').css('align-self', 'flex-end');
+    $('#align-self-flex-end').css('background-color', '#e74c3c');
+  });
+
+  $('#align-self-center').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-center';
+    $('#wrap-five').css('align-self', 'center');
+    $('#align-self-center').css('background-color', '#e74c3c');
+  });
+
+  $('#align-self-baseline').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-baseline';
+    $('#wrap-five').css('align-self', 'baseline');
+    $('#align-self-baseline').css('background-color', '#e74c3c');
+  });
+
+  $('#align-self-stretch').on('click', function(){
+    if(alignSelf['status']){
+      $('#align-self' + alignSelf['value']).css('background-color', '#ffffff');
+    }
+    alignSelf['status'] = true;
+    alignSelf['value'] = '-stretch';
+    $('#wrap-five').css('align-self', 'stretch');
+    $('#align-self-stretch').css('background-color', '#e74c3c');
+  });
+
 });
