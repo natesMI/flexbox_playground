@@ -26,9 +26,39 @@ $( document ).ready(function() {
       $('flex' + flex['value']).css('background-color', '#ffffff');
     }
     flex['status'] = true;
-    flex['value'] = '.uno';
-    $('.uno').css('flex', '1');
+    flex['value'] = '-one';
+    $('#wrap-one').css('flex', '1');
     $('#flex-one').css('background-color', '#9b59b6');
-  })
+  });
+
+  $('#flex-three').on('click', function(){
+    if(flex['status']){
+      $('flex' + flex['value']).css('background-color', '#ffffff');
+    }
+    flex['status'] = true;
+    flex['value'] = '-three';
+    $('#wrap-three').css('flex', '1');
+    $('#flex-three').css('background-color', '#9b59b6');
+  });
+
+  $('#flex-six').on('click', function(){
+    if(flex['status']){
+      $('flex' + flex['value']).css('background-color', '#ffffff');
+    }
+    flex['status'] = true;
+    flex['value'] = '-six';
+    $('#wrap-six').css('flex', '1');
+    $('#flex-six').css('background-color', '#9b59b6');
+  });
+
+  $('#flex-nine').on('click', function(){
+    if(flex['status']){
+      $('flex' + flex['value']).css('background-color', '#ffffff');
+    }
+    flex['status'] = true;
+    flex['value'] = '-nine';
+    $('#wrap-nine').css('flex', '1');
+    $('#flex-nine').css('background-color', '#9b59b6');
+  });
 
 });
