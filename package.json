@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/natesMI/flexbox_playground/issues"
   },
-  "homepage": "https://github.com/natesMI/flexbox_playground#readme"
+  "homepage": "https://github.com/natesMI/flexbox_playground#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
 }
