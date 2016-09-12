@@ -141,4 +141,32 @@ $( document ).ready(function() {
     $('#align-self-stretch').css('background-color', '#e74c3c');
   });
 
+  $('#order-three').on('click', function(){
+    order['status'] = true;
+    order['value'] = '-three';
+    $('#wrap-three').css('order', '2');
+    $('#order-three').css('background-color', '#9b59b6');
+  });
+
+  $('#order-four').on('click', function(){
+    order['status'] = true;
+    order['value'] = '-four';
+    $('#wrap-four').css('order', '2');
+    $('#order-four').css('background-color', '#9b59b6');
+  });
+
+  $('#order-six').on('click', function(){
+    order['status'] = true;
+    order['value'] = '-six';
+    $('#wrap-six').css('order', '1');
+    $('#order-six').css('background-color', '#9b59b6');
+  });
+
+  $('#order-seven').on('click', function(){
+    order['status'] = true;
+    order['value'] = '-seven';
+    $('#wrap-seven').css('order', '1');
+    $('#order-seven').css('background-color', '#9b59b6');
+  });
+
 });
