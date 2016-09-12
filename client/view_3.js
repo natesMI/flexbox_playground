@@ -169,4 +169,34 @@ $( document ).ready(function() {
     $('#order-seven').css('background-color', '#9b59b6');
   });
 
+  $('#flex-flow-column-wrap').on('click', function(){
+    if(flexFlow['status']){
+      $('#flex-flow' + flexFlow['value']).css('background-color', '#ffffff');
+    }
+    flexFlow['status'] = true;
+    flexFlow['value'] = '-column-wrap';
+    $('#container-three').css('flex-flow', 'column wrap');
+    $('#flex-flow-column-wrap').css('background-color', '#3498db');
+  });
+
+  $('#flex-flow-row-wrap').on('click', function(){
+    if(flexFlow['status']){
+      $('#flex-flow' + flexFlow['value']).css('background-color', '#ffffff');
+    }
+    flexFlow['status'] = true;
+    flexFlow['value'] = '-row-wrap';
+    $('#container-three').css('flex-flow', 'row wrap');
+    $('#flex-flow-row-wrap').css('background-color', '#3498db');
+  });
+
+  $('#flex-flow-row-reverse-wrap-reverse').on('click', function(){
+    if(flexFlow['status']){
+      $('#flex-flow' + flexFlow['value']).css('background-color', '#ffffff');
+    }
+    flexFlow['status'] = true;
+    flexFlow['value'] = '-row-reverse-wrap-reverse';
+    $('#container-three').css('flex-flow', 'row-reverse wrap-reverse');
+    $('#flex-flow-row-reverse-wrap-reverse').css('background-color', '#3498db');
+  });
+
 });
