@@ -13,7 +13,7 @@
   - Clone it down to your local machine
   - Open index.html in you browser
 
-- Or vist the live site by clicking [here](https://serene-waters-98280.herokuapp.com/)
+- Or vist the live site by clicking [here](https://flexbox-playground.herokuapp.com/)
 
 
 
